@@ -1,0 +1,27 @@
+body {
+  margin: 10px;
+}
+
+.box {
+  display: block;
+  /* border: black solid 1px; */
+  border-radius: 10%;
+}
+
+.orange {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+}
+
+.green {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.grey {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+}
