@@ -25,3 +25,21 @@ body {
   width: 100px;
   background-color: grey;
 }
+
+.orange2 {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+}
+
+.green2 {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.grey2 {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+}
