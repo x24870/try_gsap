@@ -47,3 +47,17 @@ body {
 #logo {
   transform: scale(0.5);
 }
+
+.ball {
+  border-radius: 50%;
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+}
+
+.stagger-box {
+  height: 100px;
+  width: 100px;
+  display: inline;
+  background-color: cadetblue;
+}

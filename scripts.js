@@ -13,4 +13,23 @@ gsap.to(".grey2", { duration: 3, x: 200, y: 100, scale: 2, skewX: 45, rotation: 
 
 // example3
 // gsap.from("#logo", {duration: 3, x: 300, opacity: 0, scale: 0.1});
-gsap.fromTo("#logo", {width: 0, height: 0}, {duration: 1.5, x: 600, width: 500, height: 200});
+gsap.fromTo("#logo", { width: 0, height: 0 }, { duration: 1.5, x: 600, width: 500, height: 200 });
+
+// bounce-ease
+gsap.to(".ball", { duration: 2, x: 300, ease: "bounce" });
+
+//stagger
+document.querySelectorAll(".stagger-box").forEach((box) => {
+  box.addEventListener("click", () => {
+    gsap.to(
+      ".box",
+      {
+        duration: 0.5,
+        opacity: 0,
+        y: -100,
+        stagger: 0.1,
+        ease: "back.in"
+      }
+    );
+  });
+});
