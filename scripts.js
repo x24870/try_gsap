@@ -27,11 +27,12 @@ gsap.from(".stagger-box", {
   stagger: 0.2,
   ease: "elastic",
   force3D: true,
-  onComplete: cb
+  onComplete: cb,
+  onCompleteParams: ['finished!']
 });
 
-function cb(){
-  console.log('callback finished!')
+function cb(message){
+  console.log(message)
 }
 
 document.querySelectorAll(".stagger-box").forEach((box) => {
