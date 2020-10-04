@@ -58,6 +58,7 @@ body {
 .stagger-box {
   height: 100px;
   width: 100px;
-  display: inline;
+  display: inline-block;
   background-color: cadetblue;
+  margin: 5px;
 }

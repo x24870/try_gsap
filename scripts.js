@@ -19,10 +19,25 @@ gsap.fromTo("#logo", { width: 0, height: 0 }, { duration: 1.5, x: 600, width: 50
 gsap.to(".ball", { duration: 2, x: 300, ease: "bounce" });
 
 //stagger
+gsap.from(".stagger-box", {
+  duration: 2,
+  scale: 0.5,
+  opacity: 0,
+  delay: 0.5,
+  stagger: 0.2,
+  ease: "elastic",
+  force3D: true,
+  onComplete: cb
+});
+
+function cb(){
+  console.log('callback finished!')
+}
+
 document.querySelectorAll(".stagger-box").forEach((box) => {
   box.addEventListener("click", () => {
     gsap.to(
-      ".box",
+      ".stagger-box",
       {
         duration: 0.5,
         opacity: 0,
