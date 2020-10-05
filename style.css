@@ -62,3 +62,24 @@ body {
   background-color: cadetblue;
   margin: 5px;
 }
+
+#timeline-yellow{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: relative;
+}
+
+#timeline-green{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+}
+
+#timeline-red{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+}
