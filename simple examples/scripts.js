@@ -49,3 +49,11 @@ document.querySelectorAll(".stagger-box").forEach((box) => {
     );
   });
 });
+
+//timeline
+let tl = gsap.timeline({repeat:2, repeatDelay: 1});
+
+tl.to('#timeline-yellow', 0.1, {x:300, y:80, zIndex:5});
+tl.to('#timeline-green', {duration: 1, x:300, y:50});
+tl.to('#timeline-red', {duration: 1, x:300, zIndex:-1});
+tl.set('#timeline-yellow', {zIndex:6})
