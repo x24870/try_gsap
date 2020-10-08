@@ -1,0 +1,47 @@
+$background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+$shadow    : #533d4a;
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: 'Secular One', sans-serif;
+}
+
+body {
+  height    : 100%;
+  width     : 100%;
+  background: $background;
+}
+
+.container {
+  height         : 100%;
+  width          : 100%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  .title {
+    text-align    : center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transform     : translateY(-1em) rotate(-10deg);
+    position      : relative;
+
+    span {
+      display    : block;
+      transform  : skew(-10deg);
+      text-shadow: $shadow 1px 1px, paleturquoise 2px 2px, orangered 3px 3px, brown 4px 4px, wheat 5px 5px, green 6px 6px;
+    }
+
+  }
+}
+
+
+  h1:nth-child(1) {
+    color: red;
+  }
+
+  h1:nth-child(2) {
+    color: green;
+  }
