@@ -32,6 +32,7 @@ body {
       display    : block;
       transform  : skew(-10deg);
       text-shadow: $shadow 1px 1px, paleturquoise 2px 2px, orangered 3px 3px, brown 4px 4px, wheat 5px 5px, green 6px 6px;
+      position      : relative;
     }
 
   }
