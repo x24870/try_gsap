@@ -1,0 +1,60 @@
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+// without this setting body height:100% will not work
+// because it needs a parent element
+// Or this can be replace with 100vh
+html {
+  height: 100%;
+  width : 100%;
+}
+
+body {
+  height          : 100%;
+  width           : 100%;
+  background-color: palegoldenrod;
+  position        : relative;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+}
+
+.uptext-container {
+  width: 100%;
+}
+
+#uptext {
+  word-spacing    : 0.3em;
+  font-family     : 'Staatliches', cursive;
+  text-transform  : uppercase;
+  // background-color: rgba(218, 112, 214, 0.39);
+}
+
+.logo-container {
+  display        : flex;
+  justify-content: center;
+  transform      : translateY(-20%);
+}
+
+#logo {
+  width           : 300px;
+  height          : 300px;
+  background-color: orange;
+  border-radius   : 50%;
+}
+
+.bottom-container {
+  width    : 100%;
+  transform: translateY(-120%);
+}
+
+#bottomtext {
+  word-spacing    : 0.3em;
+  font-family     : 'Staatliches', cursive;
+  text-transform  : uppercase;
+  // background-color: rgba(218, 112, 214, 0.39);
+}
