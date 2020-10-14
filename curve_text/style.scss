@@ -15,7 +15,7 @@ html {
 body {
   height          : 100%;
   width           : 100%;
-  background-color: palegoldenrod;
+  background-color: #ff8a5c;
   position        : relative;
   display         : flex;
   flex-direction  : column;
@@ -25,36 +25,59 @@ body {
 
 .uptext-container {
   width: 100%;
+
+  #uptext {
+    word-spacing  : 0.3em;
+    font-family   : 'Staatliches', cursive;
+    text-transform: uppercase;
+    color         : #fff591;
+  }
 }
 
-#uptext {
-  word-spacing    : 0.3em;
-  font-family     : 'Staatliches', cursive;
-  text-transform  : uppercase;
-  // background-color: rgba(218, 112, 214, 0.39);
-}
+
 
 .logo-container {
   display        : flex;
   justify-content: center;
   transform      : translateY(-20%);
+
+  #logo {
+    width           : 300px;
+    height          : 300px;
+    background-color: #fff591;
+    border-radius   : 50%;
+    display         : flex;
+    justify-content : center;
+
+    .enter-btn {
+      font-size       : 5em;
+      font-weight     : bold;
+      border          : none;
+      background-color: transparent;
+      font-family     : 'Staatliches', cursive;
+      color           : #f5587b;
+    }
+
+    .enter-btn:focus {
+      outline: none;
+    }
+
+    .enter-btn:hover {
+      cursor: pointer;
+    }
+  }
 }
 
-#logo {
-  width           : 300px;
-  height          : 300px;
-  background-color: orange;
-  border-radius   : 50%;
-}
+
 
 .bottom-container {
   width    : 100%;
   transform: translateY(-120%);
-}
 
-#bottomtext {
-  word-spacing    : 0.3em;
-  font-family     : 'Staatliches', cursive;
-  text-transform  : uppercase;
-  // background-color: rgba(218, 112, 214, 0.39);
+  #bottomtext {
+    word-spacing  : 0.3em;
+    font-family   : 'Staatliches', cursive;
+    text-transform: uppercase;
+    color         : #fff591;
+  }
 }

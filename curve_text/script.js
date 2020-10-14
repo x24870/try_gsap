@@ -10,5 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // backgroundPosition: "500px 0px"
     })
     .from("#uptext", 0.5, {opacity: 0})
-    .from("#bottomtext", 0.5, {opacity: 0}, "-=0.2");
+    .from("#bottomtext", 0.5, {opacity: 0}, "-=0.2")
+    .from(".enter-btn", 0.5, {opacity: 0})
+    .to(".enter-btn", 0.5, {textShadow: "5px 5px 10px #c0b64d"}, "-=0.2")
 });
