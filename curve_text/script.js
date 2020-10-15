@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("load", (event) => {
     let uptext = document.getElementById("uptext");
     let bottomtext = document.getElementById("bottomtext");
     new CircleType(uptext).radius(200);
